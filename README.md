@@ -9,4 +9,4 @@ Why `mp3` to `sbv`? Because that's what [youtube.com](https://www.youtube.com/) 
 
 Initially vibe-coded with [Qwen](https://qwen.org/).
 
-Thanks for the tips, [freecodecamp](https://www.freecodecamp.org/news/python-requirementstxt-explained/)-
+Thanks for the tips, [freecodecamp](https://www.freecodecamp.org/news/python-requirementstxt-explained/).
