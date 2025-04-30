@@ -1,4 +1,3 @@
-# pip install SpeechRecognition pydub tqdm
 # Version 4
 
 import sys
