@@ -1,3 +1,4 @@
+# Simple Transcriber in Python
 # Version 4
 
 import sys
