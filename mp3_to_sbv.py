@@ -1,5 +1,5 @@
 # pip install SpeechRecognition pydub tqdm
-# Version 5
+# Version 6
 
 import sys
 import os
@@ -41,15 +41,25 @@ def audio_to_sbv(audio_path, silence_thresh=-50, min_silence_len=1000):
         # https://github.com/jiaaro/pydub
         # Determine file format and load accordingly
         file_ext = os.path.splitext(audio_path)[1].lower()
-        if file_ext == '.mp3':
-            audio = AudioSegment.from_mp3(audio_path)
-        elif file_ext == '.wav':
-            audio = AudioSegment.from_wav(audio_path)
-        elif file_ext == '.ogg':
-            audio = AudioSegment.from_ogg(audio_path),
+        format_handlers = {
+            '.mp3': lambda path: AudioSegment.from_mp3(path),
+            '.wav': lambda path: AudioSegment.from_wav(path),
+            '.ogg': lambda path: AudioSegment.from_ogg(path),
+            '.flac': lambda path: AudioSegment.from_file(path, format='flac'),
+            '.aac': lambda path: AudioSegment.from_file(path, format='aac'),
+            '.m4a': lambda path: AudioSegment.from_file(path, format='m4a'),
+            '.wma': lambda path: AudioSegment.from_file(path, format='wma'),
+            '.aiff': lambda path: AudioSegment.from_file(path, format='aiff'),
+            '.au': lambda path: AudioSegment.from_file(path, format='au'),
+            '.raw': lambda path: AudioSegment.from_file(path, format='raw'),
+            '.3gp': lambda path: AudioSegment.from_file(path, format='3gp'),
+            '.webm': lambda path: AudioSegment.from_file(path, format='webm'),
+        }
+
+        if file_ext in format_handlers:
+            audio = format_handlers[file_ext](audio_path)
         else:
-            print(f"Unsupported file format: {file_ext}. Please use MP3 or WAV.")
-            sys.exit(1)
+            raise ValueError(f"Unsupported audio format: {file_ext}")
     except Exception as e:
         print(f"Error loading audio file {audio_path}: {e}")
         sys.exit(1)
