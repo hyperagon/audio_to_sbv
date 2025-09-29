@@ -38,6 +38,7 @@ def audio_to_sbv(audio_path, silence_thresh=-50, min_silence_len=1000):
     """
     # Load the audio file
     try:
+        # https://github.com/jiaaro/pydub
         # Determine file format and load accordingly
         file_ext = os.path.splitext(audio_path)[1].lower()
         if file_ext == '.mp3':
