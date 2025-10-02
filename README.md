@@ -11,7 +11,7 @@ Initially vibe-coded with **Qwen**.
 
 Thanks for the tips, [freecodecamp](https://www.freecodecamp.org/news/python-requirementstxt-explained/).
 
-Modified to allow a multitude of files as input (it uses [PyDub](https://github.com/jiaaro/pydub)):
+### Modified to allow a multitude of files as input (it uses [PyDub](https://github.com/jiaaro/pydub))
 - .mp3
 - .wav
 - .ogg
