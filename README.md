@@ -7,8 +7,6 @@ Why `mp3` to `sbv`? Because that's what [youtube.com](https://www.youtube.com/) 
 
 What transcriber is used? Google Speech Recognition, learn more [here](https://github.com/Uberi/speech_recognition/blob/master/examples/audio_transcribe.py).
 
-Initially vibe-coded with **Qwen**.
-
 Thanks for the tips, [freecodecamp](https://www.freecodecamp.org/news/python-requirementstxt-explained/).
 
 ### Modified to allow a multitude of files as input (it uses [PyDub](https://github.com/jiaaro/pydub))
