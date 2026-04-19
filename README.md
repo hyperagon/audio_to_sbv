@@ -22,3 +22,5 @@ Thanks for the tips, [freecodecamp](https://www.freecodecamp.org/news/python-req
 - .raw
 - .3gp
 - .webm
+
+Note to self: Use [Whisper.cpp](https://github.com/ggml-org/whisper.cpp) instead of **Google Transcribe** for offline use.
