@@ -1,13 +1,14 @@
 ## Simple Transcriber in Python
 ### Version 7
 
-It now works with the [Vosk](https://alphacephei.com/vosk/) speech to text library.
+It now works with the [Vosk](https://alphacephei.com/vosk/) speech to text library, working fully offline.
 
 I used [UV](https://docs.astral.sh/uv/) to make it portable.
 
+Just run this in your terminal after extracting `vosk-model-en-us-0.22-lgraph.zip`:
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh # Install UV, you could also use pip install uv
-uv init -p 3.12 # Initialize in directory, in this case I use Python 3.12 but it's optional
+uv init -p 3.12 # Initialize in current directory, in this case I specify Python 3.12 but it's optional
 uv add pydub tqdm vosk # Install dependencies
 uv run audio_to_sbv2.py audio.mp3 # Example
 ```
