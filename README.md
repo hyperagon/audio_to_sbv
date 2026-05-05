@@ -1,5 +1,14 @@
 ## Simple Transcriber in Python
-### Version 5
+### Version 7
+
+It now works with the [Vosk](https://alphacephei.com/vosk/) speech to text library.
+
+I used [UV](https://docs.astral.sh/uv/) to make it portable.
+
+Get it: ´curl -LsSf https://astral.sh/uv/install.sh | sh`
+
+
+### Version 6
 
 Just use `pip install -r requirements.txt` then run with `python mp3_to_sbv.py audio.mp3`, replacing `audio.mp3` by the path to an `mp3` file and it will generate an `audio.sbv` next to the input file.
 
