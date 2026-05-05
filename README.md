@@ -5,11 +5,12 @@ It now works with the [Vosk](https://alphacephei.com/vosk/) speech to text libra
 
 I used [UV](https://docs.astral.sh/uv/) to make it portable.
 
-Get it: ´curl -LsSf https://astral.sh/uv/install.sh | sh`
-#!/bin/bash
-uv init
-uv add pydub tqdm vosk
-echo "uv run audio_to_sbv2.py audio.mp3"
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh # Install UV, you could also use pip install uv
+uv init -p 3.12 # Initialize in directory, in this case I use Python 3.12 but it's optional
+uv add pydub tqdm vosk # Install dependencies
+uv run audio_to_sbv2.py audio.mp3 # Example
+```
 
 ### Version 6
 
