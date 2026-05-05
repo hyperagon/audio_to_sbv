@@ -8,7 +8,7 @@ I used [UV](https://docs.astral.sh/uv/) to make it portable.
 You need to download a *model* from the [Vosk Models website](https://alphacephei.com/vosk/models) and extract it,
 I used the `vosk-model-en-us-0.22-lgraph` but you can change the **VOSK_MODEL_PATH** variable in the script.
 
-Set it up in your terminal:
+Now set it up in your terminal:
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh # Install UV, you could also use pip install uv
 uv init -p 3.12 # Initialize in current directory, in this case I specify Python 3.12 but it's optional
