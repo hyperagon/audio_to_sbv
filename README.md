@@ -8,14 +8,14 @@ I used [UV](https://docs.astral.sh/uv/) to make it portable.
 You need to download a *model* from [Vosk Models website](https://alphacephei.com/vosk/models) and extract it,
 I used the `vosk-model-en-us-0.22-lgraph` but you can change the **VOSK_MODEL_PATH** variable in the script.
 
-Run this in your terminal:
+Set it up in your terminal:
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh # Install UV, you could also use pip install uv
 uv init -p 3.12 # Initialize in current directory, in this case I specify Python 3.12 but it's optional
 uv add pydub tqdm vosk # Install dependencies
 ```
 
-Now you can run like this:
+Now you can run:
 `uv run audio_to_sbv2.py audio.mp3`
 
 ### Version 6
