@@ -18,7 +18,7 @@ uv add pydub tqdm vosk # Install dependencies
 And run it with:
 `uv run audio_to_sbv2.py audio.mp3`
 
-Thank [Kokoro ONNX](https://github.com/thewh1teagle/kokoro-onnx).
+Thank you [Kokoro ONNX](https://github.com/thewh1teagle/kokoro-onnx).
 
 ### Version 6
 
