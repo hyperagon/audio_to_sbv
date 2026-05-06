@@ -14,6 +14,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh # Install UV, you could also use
 uv init -p 3.12 # Initialize in current directory, in this case I specify Python 3.12 but it's optional
 uv add pydub tqdm vosk # Install dependencies
 ```
+
 And run it with:
 `uv run audio_to_sbv2.py audio.mp3`
 
@@ -40,5 +41,3 @@ Thanks for the tips, [freecodecamp](https://www.freecodecamp.org/news/python-req
 - .raw
 - .3gp
 - .webm
-
-Note to self: Use [Whisper.cpp](https://github.com/ggml-org/whisper.cpp) instead of **Google Transcribe** for offline use.
