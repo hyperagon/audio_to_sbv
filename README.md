@@ -18,6 +18,8 @@ uv add pydub tqdm vosk # Install dependencies
 And run it with:
 `uv run audio_to_sbv2.py audio.mp3`
 
+Thank [Kokoro ONNX](https://github.com/thewh1teagle/kokoro-onnx).
+
 ### Version 6
 
 Just use `pip install -r requirements.txt` then run with `python mp3_to_sbv.py audio.mp3`, replacing `audio.mp3` by the path to an `mp3` file and it will generate an `audio.sbv` next to the input file.
